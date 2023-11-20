@@ -1,7 +1,10 @@
 import { Button } from '@/components/ui/button'
 import { Medal } from 'lucide-react'
 import Link from 'next/link'
-import React from 'react'
+import localFont from 'next/font/local';
+import { cn } from '@/lib/utils';
+
+const headingFont = localFont({src: "../../public/fonts/font.woff2"});
 
 const MarketingPage = () => {
     return (
@@ -11,7 +14,7 @@ const MarketingPage = () => {
                     <Medal className='h-6 w-6 mr-2' />
                     No 1 taks management
                 </div>
-                <h1 className='text-3xl md:text-6xl text-center mb-6 text-neutral-600'>Taskme help organize team work</h1>
+                <h1 className={cn('text-3xl md:text-6xl text-center mb-6 text-neutral-600', headingFont.className)}>Taskme help organize team work</h1>
                 <div className='text-3xl bg-gradient-to-r from-indigo-400 to-indigo-800 text-white py-2 px-4 rounded-md w-fit'>Buil Together</div>
             </div>
             <div className='text-sm md:text-xl text-neutral-500 mt-4 max-w-xs md:max-w-2xl text-center mx-auto'>
