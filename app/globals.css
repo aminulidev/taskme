@@ -8,6 +8,11 @@ body,
   height: 100%;
 }
 
+/* clerk */
+.cl-internal-b3fm6y, .cl-organizationSwitcherPopoverFooter, .cl-userButtonPopoverFooter{
+  display: none;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
